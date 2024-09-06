@@ -96,6 +96,13 @@ namespace StyleSheetExample
         void Damage(T damageTaken);
     }
 
+    // ABSTRACT
+    // - Use the 'Base' suffix 
+    public abstract class DamageableBase : IDamageable
+    {
+        public abstract bool ApplyDamage(string description, float damage, int numberOfHits);
+    }
+
     // CLASSES or STRUCTS:
     // - Name them with nouns or noun phrases.
     // - Avoid prefixes.
